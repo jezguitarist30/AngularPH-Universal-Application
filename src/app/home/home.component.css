@@ -2,15 +2,16 @@ div.item {
     height: 700px;
 }
 
-img {
+img.banner {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 700px;
     max-width: none;
+    display: block;
+    width: 100%;
 }
-
 
 .carousel-caption span {
     font-size: 90pt;
@@ -19,3 +20,22 @@ img {
 .carousel-caption p {
     font-size: 20pt;
 }
+
+.partner-item {
+    padding: 15px;
+}
+
+.partner-item img {
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+/* .example-card {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+} */

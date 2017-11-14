@@ -1,43 +1,100 @@
-<div fxLayout="column" fxFlex>
+<div id="header-container" fxLayout="column" fxLayoutAlign="start" style="background-color:#009688">
+  <main-menu></main-menu>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<div id="footer-container" fxLayout="column" fxLayoutAlign="start" style="background-color:#967f00">
+  
+</div>
+
+<!-- <mat-card class="card-demo">
+  <mat-card-title>
+    <a href="" target="_blank">Layout Fill</a>
+  </mat-card-title>
+  <mat-card-subtitle>Using 'fxFill' to fill available width and height of parent container.
+  </mat-card-subtitle>
+  <mat-card-content class="large">
+    <div fxLayout="column" fxFill>
+      <div fxLayout fxFlex>
+        <div class="one" fxFlex="20" fxLayoutAlign="center center"> A</div>
+        <div class="two" fxFlex="80" fxLayoutAlign="center center"> B</div>
+      </div>
+    </div>
+  </mat-card-content>
+
+</mat-card>
+ -->
+
+
+<!-- 
+<div fxLayout="column" fxFlexFill>
 
   <main-menu></main-menu>
 
-  <div fxLayout="column" fxLayoutAlign="none">
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
 
-  <!-- <mat-card-content>
-      <div class="containerX">
-        <div class="container">
-          <div>flex: 1 1 5em;</div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="container">
-          <div></div>
-          <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
-          <div></div>
-        </div>
-        <div class="container">
-          <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="container">
-          <div></div>
-          <div></div>
-          <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
-        </div>
-        <div class="container">
-          <div [fxFlex]="calc3Cols" class="col3"> flex: 3 3 calc(15em + 20px);</div>
-          <div></div>
-        </div>
-        <div class="container">
-          <div></div>
-          <div [fxFlex]="calc3Cols" class="col3"> flex: 3 3 calc(15em + 20px);</div>
-        </div>
-      </div>
-    </mat-card-content> -->
+  <mat-card-footer class="bottomPad" style="background-color:red;height:100px;">
+    <div class="hint"></div>
+  </mat-card-footer>
+ -->
+<!-- <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center">
+      
+      </div> -->
 
-</div>
+<!-- <div class="container"
+      fxLayout
+      fxLayout.xs="column"
+      fxLayoutAlign="center"
+      fxLayoutGap="10px"
+      fxLayoutGap.xs="0">
+    <div class="item item-1" fxFlex="15%">Item 1</div>
+    <div class="item item-2" fxFlex="20%" fxFlexOrder="3">Item 2</div>
+    <div class="item item-3" fxFlex>Item 3</div>
+    </div>
+    
+    <div class="container"
+      fxLayout
+      fxLayout.xs="column"
+      fxLayoutAlign="center"
+      fxLayoutGap="10px"
+      fxLayoutGap.xs="0">
+    <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0">Item 4</div>
+    <div class="item item-5" fxFlex="200px">Item 5</div>
+    </div> -->
+<!-- <mat-card-content>
+          <div class="containerX">
+            <div class="container">
+              <div>flex: 1 1 5em;</div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="container">
+              <div></div>
+              <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
+              <div></div>
+            </div>
+            <div class="container">
+              <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="container">
+              <div></div>
+              <div></div>
+              <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
+            </div>
+            <div class="container">
+              <div [fxFlex]="calc3Cols" class="col3"> flex: 3 3 calc(15em + 20px);</div>
+              <div></div>
+            </div>
+            <div class="container">
+              <div></div>
+              <div [fxFlex]="calc3Cols" class="col3"> flex: 3 3 calc(15em + 20px);</div>
+            </div>
+          </div>
+        </mat-card-content> -->
+<!-- 
+</div> -->
