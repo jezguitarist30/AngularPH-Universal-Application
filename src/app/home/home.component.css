@@ -1,0 +1,21 @@
+div.item {
+    height: 700px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 700px;
+    max-width: none;
+}
+
+
+.carousel-caption span {
+    font-size: 90pt;
+}
+
+.carousel-caption p {
+    font-size: 20pt;
+}

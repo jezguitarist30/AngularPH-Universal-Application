@@ -12,20 +12,24 @@
 
 
 <mat-menu #appMenu="matMenu">
-  <button mat-menu-item>
+  <button mat-menu-item routerLink="/">
     <mat-icon> home </mat-icon>
     <span> Home </span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item routerLink="mission-and-vision">
     <mat-icon> local_library </mat-icon>
     <span> Mission and Vision </span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item routerLink="events">
     <mat-icon> event </mat-icon>
     <span> Events </span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item routerLink="contact-us">
     <mat-icon> phone </mat-icon>
     <span> Contact Us </span>
+  </button>
+  <button mat-menu-item routerLink="shared/dev-tools">
+    <mat-icon> build </mat-icon>
+    <span> Dev Tools </span>
   </button>
 </mat-menu>

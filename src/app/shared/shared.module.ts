@@ -10,7 +10,7 @@ import { DevToolsComponent } from './dev-tools/dev-tools.component';
 @NgModule({
   imports: [
     CommonModule,
-   // MaterialModule,
+    MaterialModule,
     SharedRoutingModule
   ],
   declarations: [ButtonsComponent, DevToolsComponent]
