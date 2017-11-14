@@ -1,7 +1,14 @@
 <div fxLayout="column" fxFlex>
 
-  <mat-toolbar color="primary">
-    <span>Angular Material</span>
+  <!-- <mat-toolbar color="primary">
+
+  <!-- Filler that pushes the menu button to the end of the toolbar -->
+  <!-- <span fxFlex></span> -->
+
+  <!-- <button mat-icon-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+
   </mat-toolbar>
 
   <mat-sidenav-container fxFlex>
@@ -9,35 +16,44 @@
       Sidenav
     </mat-sidenav>
     <div class="content">
-      Page Content
+      <router-outlet></router-outlet>
     </div>
-  </mat-sidenav-container>
+  </mat-sidenav-container> -->
 
-
-  <mat-card>
-    Main Theme:
-    <button mat-raised-button color="primary">
-      Primary
-    </button>
-    <button mat-raised-button color="accent">
-      Accent
-    </button>
-    <button mat-raised-button color="warn">
-      Warning
-    </button>
-  </mat-card>
-
-  <mat-card class="alternate-theme">
-    Alternate Theme:
-    <button mat-raised-button color="primary">
-      Primary
-    </button>
-    <button mat-raised-button color="accent">
-      Accent
-    </button>
-    <button mat-raised-button color="warn">
-      Warning
-    </button>
-  </mat-card>
+  <main-menu></main-menu>
   
+  <mat-card-content>
+      <div class="containerX">
+        <div class="container">
+          <div>flex: 1 1 5em;</div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="container">
+          <div></div>
+          <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
+          <div></div>
+        </div>
+        <div class="container">
+          <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="container">
+          <div></div>
+          <div></div>
+          <div [fxFlex]="calc2Cols"> flex: 2 2 calc(10em + 10px);</div>
+        </div>
+        <div class="container">
+          <div [fxFlex]="calc3Cols" class="col3"> flex: 3 3 calc(15em + 20px);</div>
+          <div></div>
+        </div>
+        <div class="container">
+          <div></div>
+          <div [fxFlex]="calc3Cols" class="col3"> flex: 3 3 calc(15em + 20px);</div>
+        </div>
+      </div>
+    </mat-card-content>
+
 </div>
