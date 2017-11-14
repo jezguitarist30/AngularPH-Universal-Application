@@ -30,6 +30,8 @@ import {
     MatStepperModule,
 } from '@angular/material';
 
+import {PlatformModule} from '@angular/cdk/platform';
+import {ObserversModule} from '@angular/cdk/observers';
 
 @NgModule({
     exports: [
@@ -61,6 +63,8 @@ import {
         MatTabsModule,
         MatToolbarModule,
         MatTooltipModule,
+        ObserversModule,
+        PlatformModule
     ]
 })
 export class MaterialModule { }
