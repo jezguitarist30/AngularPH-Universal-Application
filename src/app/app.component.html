@@ -1,13 +1,23 @@
-<div id="header-container" fxLayout="column" fxLayoutAlign="start" style="background-color:#009688">
-  <main-menu></main-menu>
+<div fxFlexFill fxLayout="column">
+
+  <div id="header-container" fxLayout="column">
+
+    <main-menu></main-menu>
+
+  </div>
+
+  <div fxLayout="column" fxFlex>
+
+    <router-outlet></router-outlet>
+
+  </div>
+
 </div>
 
 
-<router-outlet></router-outlet>
+<!-- <div id="footer-container" fxLayout="column" fxLayoutAlign="start" style="background-color:#967f00">
 
-<div id="footer-container" fxLayout="column" fxLayoutAlign="start" style="background-color:#967f00">
-  
-</div>
+</div> -->
 
 <!-- <mat-card class="card-demo">
   <mat-card-title>
