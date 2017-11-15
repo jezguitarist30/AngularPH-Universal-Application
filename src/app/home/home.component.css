@@ -1,4 +1,4 @@
-div.item {
+/* div.item {
     height: 700px;
 }
 
@@ -7,10 +7,24 @@ img.banner {
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 700px;
     max-width: none;
     display: block;
     width: 100%;
+} */
+
+img.banner {
+    width: 100%;
+    display: block;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 700px !important;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .carousel-caption span {
@@ -21,21 +35,70 @@ img.banner {
     font-size: 20pt;
 }
 
-.partner-item {
-    padding: 15px;
-}
 
 .partner-item img {
-    height: 110px;
+    height: 100px;
     margin-bottom: 20px;
 }
 
-/* .example-card {
-    width: 400px;
-    margin-bottom: 20px;
+
+/* Smaller than standard 960 (devices and browsers) */
+
+@media only screen and (max-width: 959px) {
+    .carousel-inner {
+        max-height: 700px !important;
+    }
 }
 
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-} */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .carousel-inner {
+        max-height: 700px !important;
+    }
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+
+@media only screen and (max-width: 767px) {
+    .carousel-inner {
+        max-height: 500px !important;
+    }
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .carousel-inner {
+        max-height: 500px !important;
+    }
+
+    .carousel-caption span {
+        font-size: 50pt !important;
+    }
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    .carousel-inner {
+        max-height: 250px !important;
+    }
+
+    .carousel-caption span {
+        font-size: 30pt !important;
+    }
+
+    .carousel-caption p {
+        font-size: 15pt;
+    }
+
+    .partner-item img {
+        height: 70px;
+    }
+}

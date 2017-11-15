@@ -12,6 +12,15 @@ body {
     height: 100%;
 }
 
+footer {
+    margin-top: 20px;
+    background-color: #D32F2F;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    min-height: 70px;
+}
+
 .section-title {
     color: #333;
     font-size: 41px;
@@ -22,20 +31,21 @@ body {
 }
 
 .section-title::before {
-  content: " ";
-  position: absolute;
-  width: 210px;
-  height: 1px;
-  background: #bababa;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+    content: " ";
+    position: absolute;
+    width: 210px;
+    height: 1px;
+    background: #bababa;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 p {
-  font-size: 17px;
+    font-size: 17px;
 }
+
 
 /* 
 .containerX {
