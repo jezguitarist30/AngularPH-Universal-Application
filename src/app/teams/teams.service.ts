@@ -8,7 +8,6 @@ export class Member {
   public id: number;
   public name: string;
   public position: string;
-  public thumb: string;
   public bio: string;
 }
 
@@ -21,27 +20,27 @@ export class TeamsService {
 
     this.members.push(
       {
-        id: 1, name: "CJ Felix", position: "Community Leader", thumb: "../assets/img/members/cjfelix.jpg",
+        id: 1, name: "CJ Felix", position: "Community Leader",
         bio: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
         text ever since the 1500s.`
       },
       {
-        id: 2, name: "Jez Reel", position: "Community Leader", thumb: "../assets/img/members/jezreel.jpg",
+        id: 2, name: "Jez Reel", position: "Community Leader",
         bio: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
         text ever since the 1500s.`
       },
       {
-        id: 3, name: "Jethro", position: "Community Leader", thumb: "../assets/img/members/jethro.jpg",
+        id: 3, name: "Jethro", position: "Community Leader",
         bio: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
         text ever since the 1500s.`
       },
       {
-        id: 4, name: "Zach", position: "Community Leader", thumb: "../assets/img/members/zach.jpg",
+        id: 4, name: "Zach", position: "Community Leader",
         bio: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
         text ever since the 1500s.`
       },
       {
-        id: 5, name: "Jonas", position: "Community Leader", thumb: "../assets/img/members/jonas.jpg",
+        id: 5, name: "Jonas", position: "Community Leader",
         bio: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
         text ever since the 1500s.`
       },

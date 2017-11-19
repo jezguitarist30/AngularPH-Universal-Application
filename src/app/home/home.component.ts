@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -19,9 +20,17 @@ export class HomeComponent implements OnInit {
   <p>Lastly we choose Angular framework as our weapon of choice in building web applications, Angular is a JavaScript-based open-source front-end web application framework 
   mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.</p>`;
 
-  constructor() {
-   
-  
+  constructor(meta: Meta, title: Title) {
+
+    const pageTitle: string = 'AngularPH - Home Page';
+    
+    title.setTitle(pageTitle);
+
+    meta.updateTag({ name: 'keywords', content: 'angular, seo, angular universal, angularPH' });
+    meta.updateTag({ name: 'description', content: this.about });
+    meta.updateTag({ property: 'og:title', content: pageTitle });
+    meta.updateTag({ property: 'og:description', content:  this.about });
+    meta.updateTag({ property: 'og:image', content: 'assets/img/banners/angularph-meetup-banner2.jpg' });
   }
 
   ngOnInit() {
