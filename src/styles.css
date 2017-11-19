@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "https://fonts.googleapis.com/css?family=Material+Icons";
+@import "https://fonts.googleapis.com/css?family=Roboto:400,300";
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #D32F2F;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    min-height: 70px;
+}
+
+.section-title {
+    color: #333;
+    font-size: 41px;
+    margin-bottom: 55px;
+    padding-bottom: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.section-title::before {
+    content: " ";
+    position: absolute;
+    width: 210px;
+    height: 1px;
+    background: #bababa;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+p {
+    font-size: 17px;
+}
+
+p.content {
+  font-size: 50pt;
+  text-align: center;
+  margin: 150px 0;
+}
+
+/* 
+.containerX {
+  padding: 5px;
+  border: solid 1px #b6b6b6;
+  box-sizing: content-box !important;
+} */
+
+
+/* 
+.card-demo mat-card,
+.card-demo mat-card-content {
+  margin-bottom: 24px;
+} */
+
+
+/* .card-demo mat-card-footer {
+  left: 24px;
+  margin-bottom: 24px;
+} */
+
+
+/* div.container {
+  display: flex;
+  margin-bottom: 10px;
+  color: #343434;
+}
+
+.container div[ng-reflect-flex*=calc] {
+  color: #343434;
+  background-color: #8bc34a;
+}
+
+.container div.col3 {
+  background-color: #009682;
+  color: white;
+}
+
+div.container > div {
+  flex: 1 1 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #03a9f4;
+  margin-left: 10px;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+div.container > div:first-child {
+  margin-left: 0;
+} */

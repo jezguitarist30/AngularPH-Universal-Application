@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+
+  <button mat-button routerLink="/">
+    <h4>Angular Philippines</h4>
+  </button>
+  <span fxFlex></span>
+  <button mat-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>menu</mat-icon> Menu
+  </button>
+
+</mat-toolbar>
+
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item routerLink="/">
+    <mat-icon> home </mat-icon>
+    <span> Home </span>
+  </button>
+  <button mat-menu-item routerLink="mission-and-vision">
+    <mat-icon> local_library </mat-icon>
+    <span> Mission and Vision </span>
+  </button>
+  <button mat-menu-item routerLink="events">
+    <mat-icon> event </mat-icon>
+    <span> Events </span>
+  </button>
+  <button mat-menu-item routerLink="contact-us">
+    <mat-icon> phone </mat-icon>
+    <span> Contact Us </span>
+  </button>
+</mat-menu>

@@ -1,0 +1,24 @@
+<div fxLayout="column" fxLayoutGap="70px">
+
+  <!-- Banners -->
+  <div>
+    <app-banners [slides]="slides"></app-banners>
+  </div>
+
+  <!-- About Us -->
+  <div>
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p [innerHTML]="about"></p>
+    </div>
+  </div>
+
+  <!-- Community Partners -->
+  <app-community-partners></app-community-partners>
+
+  <!-- Our Team -->
+  <div fxLayout="column">
+    <app-our-team></app-our-team>
+  </div>
+
+</div>
