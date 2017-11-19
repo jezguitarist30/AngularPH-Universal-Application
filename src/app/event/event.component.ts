@@ -8,7 +8,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class EventComponent implements OnInit {
 
-  constructor() { }
+  title: string;
+  content: string;
+
+  constructor() {
+
+    this.title = 'Events';
+    this.content = 'List of Events';
+
+  }
 
   ngOnInit() {
   }

@@ -8,7 +8,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class MissionVisionComponent implements OnInit {
 
-  constructor() { }
+  title: string;
+  content: string;
+
+  constructor() {
+
+    this.title = 'Mission and Vission';
+    this.content = 'This is our mission and vision';
+
+  }
 
   ngOnInit() {
   }

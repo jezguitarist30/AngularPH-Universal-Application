@@ -8,7 +8,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
-  constructor() { }
+  title: string;
+  content: string;
+
+  constructor() { 
+
+    this.title = 'Contact Us';
+    this.content = 'Please contact us at 12345-6789';
+
+  }
 
   ngOnInit() {
   }

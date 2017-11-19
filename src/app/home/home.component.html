@@ -1,18 +1,11 @@
 <div fxLayout="column" fxLayoutGap="70px">
 
+  <!-- Banners -->
   <div>
-    <carousel>
-      <slide *ngFor="let slide of slides;">
-        <img class="banner" [src]="slide.image" [alt]="slide.caption">
-
-        <div class="carousel-caption">
-          <span>{{slide.caption}}</span>
-          <p>{{slide.text}}</p>
-        </div>
-      </slide>
-    </carousel>
+    <app-banners [slides]="slides"></app-banners>
   </div>
 
+  <!-- About Us -->
   <div>
     <div class="container">
       <h2 class="section-title">About Us</h2>
@@ -20,118 +13,12 @@
     </div>
   </div>
 
+  <!-- Community Partners -->
+  <app-community-partners></app-community-partners>
 
-  <div id="partners" fxLayout="column" fxLayoutAlign="start" style="background-color:#000; color: #fff;">
-
-    <h2 class="section-title" style="color: #fff;">Community Partners</h2>
-
-    <div fxLayout="row" fxLayoutGap="25px" fxLayoutWrap fxLayoutAlign="center center">
-      <div class="partner-item">
-        <img src="../assets/img/partners/devcon.png" alt="DevCon Philippines" />
-      </div>
-      <div class="partner-item">
-        <img src="../assets/img/partners/venturspace.png" alt="VentureSpace" />
-      </div>
-      <div class="partner-item">
-        <img src="../assets/img/partners/ground_gurus.png" alt="Ground Gurus" />
-      </div>
-    </div>
-
-  </div>
-
+  <!-- Our Team -->
   <div fxLayout="column">
-
-    <h2 class="section-title">Our Team</h2>
-
-    <div [fxLayout]="layout" [fxLayoutAlign]="layoutAlign" fxLayoutWrap fxLayoutGap="10px" style="margin-bottom: 20px;">
-
-      <div fxFlex="20">
-        <mat-card style="margin-bottom: 20px;">
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../assets/img/members/cjfelix.jpg'); background-size: cover;"></div>
-            <mat-card-title>CJ Felix</mat-card-title>
-            <mat-card-subtitle>Community Leader</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="../assets/img/members/cjfelix.jpg" alt="CJ">
-          <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s.
-            </p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <div fxFlex="20">
-        <mat-card style="margin-bottom: 20px;">
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../assets/img/members/jezreel.jpg'); background-size: cover;"></div>
-            <mat-card-title>Jez Reel</mat-card-title>
-            <mat-card-subtitle>Community Leader</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="../assets/img/members/jezreel.jpg" alt="Jez Reel">
-          <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s.
-            </p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <div fxFlex="20">
-        <mat-card style="margin-bottom: 20px;">
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../assets/img/members/jethro.jpg'); background-size: cover;"></div>
-            <mat-card-title>Jethro</mat-card-title>
-            <mat-card-subtitle>Community Leader</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="../assets/img/members/jethro.jpg" alt="Jethro">
-          <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s.
-            </p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <div fxFlex="20">
-        <mat-card>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../assets/img/members/zach.jpg'); background-size: cover;"></div>
-            <mat-card-title>Zach</mat-card-title>
-            <mat-card-subtitle>Community Leader</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="../assets/img/members/zach.jpg" alt="CJ">
-          <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s.
-            </p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <div fxFlex="20">
-        <mat-card>
-          <mat-card-header>
-            <div mat-card-avatar style="background-image: url('../assets/img/members/jonas.jpg'); background-size: cover;"></div>
-            <mat-card-title>Jonas</mat-card-title>
-            <mat-card-subtitle>Community Leader</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="../assets/img/members/jonas.jpg" alt="Jethro">
-          <mat-card-content>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s.
-            </p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-    </div>
-
+    <app-our-team></app-our-team>
   </div>
 
 </div>

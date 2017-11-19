@@ -46,6 +46,11 @@ p {
     font-size: 17px;
 }
 
+p.content {
+  font-size: 50pt;
+  text-align: center;
+  margin: 150px 0;
+}
 
 /* 
 .containerX {
