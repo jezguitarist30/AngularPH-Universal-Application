@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router'
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material.module'
-//import { CarouselModule } from 'ngx-bootstrap';
+import { CarouselModule } from 'ngx-bootstrap';
 
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -13,13 +13,12 @@ import { CommunityPartnersComponent } from './community-partners/community-partn
 
 @NgModule({
   imports: [
+    CarouselModule.forRoot(),
     CommonModule,
     RouterModule,
     
     FlexLayoutModule,
-    MaterialModule,
-
-    //CarouselModule.forRoot()
+    MaterialModule    
   ],
   declarations: [
     MainMenuComponent,
