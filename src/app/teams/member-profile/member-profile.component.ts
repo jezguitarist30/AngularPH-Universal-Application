@@ -26,9 +26,6 @@ export class MemberProfileComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute,
     private router: Router) {
 
-  }
-
-  ngOnInit() {
 
     const memberId = this.route.snapshot.paramMap.get('id');
 
@@ -47,6 +44,10 @@ export class MemberProfileComponent implements OnInit, OnDestroy {
         this.meta.updateTag({ property: 'og:image', content: '../assets/img/members/' + memberId + '.jpg' });
 
       });
+
+  }
+
+  ngOnInit() {
 
   }
 

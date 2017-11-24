@@ -13,13 +13,12 @@ import { CommunityPartnersComponent } from './community-partners/community-partn
 
 @NgModule({
   imports: [
+    CarouselModule.forRoot(),
     CommonModule,
     RouterModule,
     
     FlexLayoutModule,
-    MaterialModule,
-
-    CarouselModule.forRoot()
+    MaterialModule    
   ],
   declarations: [
     MainMenuComponent,

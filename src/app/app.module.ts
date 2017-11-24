@@ -38,7 +38,7 @@ import { TeamsService } from './teams/teams.service';
     MemberProfileComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: "angularph-universal-app" }),
     HttpModule,
     RouterModule,
     BrowserAnimationsModule,
