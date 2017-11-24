@@ -9,8 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:apps": "ng build --prod && ng build --prod --app 1",
-    "server:ssr": "node dist/server.js"
+    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "serve:ssr": "node dist/server.js",
+    "build:client-and-server-bundles": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,
   "dependencies": {
@@ -32,6 +34,7 @@
     "core-js": "^2.4.1",
     "ngx-bootstrap": "^2.0.0-beta.8",
     "rxjs": "^5.5.2",
+    "ts-loader": "^3.1.1",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
